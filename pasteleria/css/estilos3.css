@@ -1,0 +1,203 @@
+*{
+ padding:0;
+ margin:0;
+ box-sizing:border-box;
+ }
+
+ body{
+ background:url("../fotos/fondob.jpg");
+ background-repeat:repeat;
+ font-family: 'Roboto', sans-serif;
+ }
+
+ .principal{
+ width:80%;
+ margin:0 auto;
+ background:#ffffff;
+ }
+
+
+ header{
+ width:100%;
+ height:450px;
+ background:url("../fotos/rr.jpg");
+ background-size: cover;
+ background-position: center center;
+ }
+
+ header menu
+ {
+ 
+ background:rgba(255, 219, 249);/* transparencia */
+ padding:20px 10px;
+ }
+
+ menu .contenedor{
+ width:90%;
+ margin:0 auto;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ }
+
+ menu .contenedor .logo{
+ font-family: 'Dancing Script', cursive;/*codigo css de google fonts*/
+ font-size:25px;
+ color:black;
+ }
+
+ menu .contenedor nav a{
+ color: black;
+ text-decoration: none;
+ font-size:18px;
+ display:inline-block;
+ padding:12px 14px;
+ margin: 0 5px;
+ }
+ /* resalta el menú al colocar el mouse sobre el */
+ menu .contenedor nav a:hover{
+ text-decoration:underline;
+ color:white;
+ }
+
+ main .perfil{
+ width:150px;
+ height:150px;
+ background:white;
+ border: 8px solid #ffffff;
+ border-radius:50%;
+ margin-top:-95px;
+ margin-bottom:10px;
+
+ margin-left:auto;
+ margin-right:auto;
+
+ }
+
+ main .perfil img{
+ width:100%;
+ border-radius:50%;
+
+ }
+ footer{
+ background:black;
+ color:#ffffff;
+ text-align:center;
+ padding:25px;
+ }
+
+ footer .negritas{
+ font-weight:bold;
+ text-align:left;
+ padding:20px;
+ }
+
+ main .contenido{
+ font-size:18px;
+ font-style:italic;
+ margin-bottom:15px;
+ text-align:justify;
+ }
+
+ main .contenido h1{
+ text-align:center;
+ font-size:35px;
+ margin:10px 0;
+ }
+
+ main .contacto{
+ background:"c1c1c1";
+ padding:50px 0;
+ }
+
+ main .contacto h3{
+ font-size:24px;
+ font-weight:bolder;
+ color:#EF476F;
+ margin:20px 0;
+ text-align:center;
+ }
+
+ main .contacto .caja .formulario{
+ width:96%;
+ display:flex;
+ justify-content: space-around;
+ flex-wrap:wrap;/* móviles*/
+
+ }
+
+ main .formulario, .nombre, .email, .tel, .pais, .mensaje{
+ background:none;
+ border:none;
+ outline:none;/*elimina borde azul (focus)*/
+ border-bottom: 1px solid gray;
+ padding:15px 20px; /* volumen de los campos */
+ font-family: "calibri light";
+ font-size: 16px;
+ color:#020202;
+ transition: all 1s ease;
+ margin-bottom:20px;
+
+
+ }
+
+ main .formulario, .nombre, .email, .tel, .pais{
+ width:46%;
+ margin-bottom:20px;
+ }
+ main .formulario .mensaje{
+ width:96%;
+ min-height:100px;
+ max-height:500px;
+ min-width:96%;
+ max-width:96%;
+ }
+
+ main .formulario .email:focus,
+ main .formulario .tel:focus,
+ main .formulario .pais:focus,
+ main .formulario .mensaje:focus{
+ border-bottom: 3px solid #EF476F;
+ }
+
+ main .formulario .btn{
+ margin:auto;
+ padding: 15px 25px;
+ font-size:16px;
+ font-family: "calibri light";
+ font-weight:bolder;
+ border:none;
+ background:none;
+ background-color:#EF476F;
+ margin-bottom:20px;
+ border-radius: 5px;
+ cursor:pointer;
+ }
+
+ main .formulario .btn:hover{
+ background-color:black;
+ }
+
+ @media screen and (max-width:700px){
+ main .formulario, .nombre, .email, .tel, .pais, .mensaje{width:96%;}
+ menu .contenedor{
+ width:90%;
+ margin:0 auto;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ flex-direction:column;
+
+ }
+/*footer{
+ background:black;
+ color:#ffffff;
+ text-align:center;
+ padding:25px;
+ }
+
+ footer .negritas{
+ font-weight:bold;
+ text-align:left;
+ padding:20px;
+ }*/

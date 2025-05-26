@@ -1,0 +1,159 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ }
+ body{
+ background:url("../fotos/fondob.jpg");
+ background-repeat:repeat;
+ font-family: 'Roboto', sans-serif;/*codigo css de google fonts*/
+ }
+ .principal{
+ width:80%;
+ margin:0 auto;
+ background:#ffffff;
+ }
+
+ header{
+ width:100%;
+ height:450px;
+ background:url("../fotos/rr.jpg");
+ background-size: cover;
+ background-position: center center;
+ }
+
+ header menu{
+
+ background:rgba(255, 219, 249,.80);/* transparencia */
+ padding:20px 10px;
+ }
+
+ menu .contenedor{
+ width:90%;
+ margin:0 auto;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ }
+ 
+  menu .contenedor .logo{
+ font-family: 'Dancing Script', cursive;/*codigo css de google fonts*/
+ font-size:25px;
+ color:black;
+ }
+ 
+ menu .contenedor nav a{
+ color: black;
+ text-decoration: none;
+ font-size:18px;
+ display:inline-block;
+ padding:12px 14px;
+ margin: 0 5px;
+ }
+ /* resalta el menú al colocar el mouse sobre el */
+ menu .contenedor nav a:hover{
+ text-decoration:underline;
+ color:white;
+ }
+ /* caja redonda para foto perfil */
+ main .perfil{
+ width:150px;
+ height:150px;
+ background:white;
+ border: 6px solid #020202;
+ border-radius:50%;
+ margin-top:-95px;
+ margin-bottom:10px;
+ margin-left: auto;
+ margin-right:auto;
+ }
+
+ /* agregar la foto de perfil */
+ main .perfil img {
+ width:100%;
+ border-radius:50%;
+ }
+
+ main .contenido{
+ background:#ffffff;
+ font-size:18px;
+ font-style:italic;
+ margin-bottom:15px;
+ text-align:justify;
+
+ }
+
+ main .contenido h1{
+ text-align:center;
+ font-size:35px;
+ margin:10px 0;
+ }
+ main .contenido p{
+ padding:25px;
+ }
+ .boton a{
+ background: teal;
+ text-decoration: none;
+ color: white;
+ font-size: 18px;
+ display:block;
+ width:100px;
+ margin: 15px auto;
+ padding: 15px 10px;
+ text-align: center;
+ border-radius: 5px;
+ }
+
+ .boton a:hover{
+ background: #005252;
+ }
+ /* desplegar slider automatico */
+ .slider{
+ width:95%;
+ margin:auto;
+ Background:white;
+ overflow:hidden;
+
+ }
+ .slider ul{
+ padding:0;
+ display:flex;
+ width:400%;
+ animation: cambio 20s infinite alternate;
+
+ }
+
+ .slider li{
+ width:100;
+ list-style:none;
+ }
+ .slider img{
+ width:100%;
+ }
+ @keyframes cambio{
+ 0% {margin-left:0;}
+ 20%{margin-left:0;}
+ 25%{margin-left:-100%;}
+ 45%{margin-left:-100%;}
+ 50%{margin-left:-200%;}
+ 70%{margin-left:-200%;}
+
+ 75%{margin-left:-300%;}
+ 100%{margin-left:-300%;}
+
+ }/* termina slider*/
+
+ footer{
+ background:black;
+ color:#ffffff;
+ text-align:center;
+ margin-top:15px;
+ padding:25px;
+ }
+
+ footer .negritas{
+ font-weight:bold;
+ background:black;
+ text-align:left;
+ padding:20px;
+ }
